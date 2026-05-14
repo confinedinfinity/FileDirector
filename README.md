@@ -6,7 +6,7 @@
 
 ## ダウンロード
 
-**[インストーラーをダウンロード](https://github.com/confinedinfinity/FileDirector/releases/download/20251006/install_FileDirector.bat)**
+**[インストーラーをダウンロード](https://github.com/confinedinfinity/FileDirector/releases/latest/download/install_FileDirector.bat)**
 
 `install_FileDirector.bat` を実行するとインストールできます。
 
