@@ -118,14 +118,13 @@ FFmpegと連携した動画変換機能です。ファイルを右クリック �
 
 ## DBメンテナンス（DB Maintenance）
 
-DBページのツールバー **MAINTAIN**、またはメニュー → **Open DB Maintenance Tab** から起動します。
+DBページのツールバー **MAINTAIN**、またはメニュー → **Database → DB Maintenance** から起動します。
 DBの登録内容を直す操作を集めた画面です。
 
 | モード | 内容 |
 |--------|------|
 | **FIND DUPLICATES** | 指定したフォルダ（またはDB）の中の重複ファイルを検出。サイズ一致＋先頭1MBの内容一致で判定 |
-| **MERGE 2 DBS** | 2つのDBを統合 |
-| **COMMONIZE ATTRIBUTES** | 2つのDBで属性を揃える |
+| **MERGE TAGS & ATTRIBUTES** | 似たファイルどうしでタグ・属性を融合。Source DB を空にすると同じDB内、指定すると2つのDB間で行います |
 | **REMOVE NON-EXISTING FILES** | 存在しないファイルのDB登録を削除 |
 | **FIX FILE NAME ENCODING** | 文字化けしたファイル名を修正 |
 
@@ -135,7 +134,8 @@ DBの登録内容を直す操作を集めた画面です。
 |---|---|
 | フォルダをDBに登録する | **ファイルマネージャ**の **ADD** ボタン（フォルダを選択、未選択なら開いているフォルダ） |
 | 移動したファイルにDBを追従させる | **ファイルマネージャ**で移動先フォルダを開き、右クリック → **Find moved files in this folder...** |
-| DB間の重複を調べて解消する | **Collection** タブの **Health**（DB組ごとの集計 → 内訳 → ごみ箱へ移動） |
+| DB間の重複を調べて解消する | **Collection** タブの **Health** →「重複をチェック」（DB組ごとの集計 → 内訳 → ごみ箱へ移動）。**消す側のタグ・属性は残す側へ自動で引き継がれます** |
+| 抽出したのに類似検索に出てこない | **Collection** タブの **Health** →「特徴量DBを検査」（数分かかります） |
 | DB未登録のメディアを探す | **Collection** タブの **Health** → フォルダ照合 |
 
 ---
